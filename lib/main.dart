@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel/screens/onboarding.dart';
 
 void main() {
   runApp(const Travel());
@@ -9,6 +10,9 @@ class Travel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Onboarding(),
+    );
   }
 }
